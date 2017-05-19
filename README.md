@@ -8,7 +8,10 @@ Ajax pagination plugin for Shopify themes.
  - Fallsback gracefully when there is no javascript available.
 
 ## Demos
-Coming soon.
+
+Endless Scroll (default) https://ajaxify.myshopify.com/collections/all
+
+More coming soon
 
 ## Getting Started
 Ajaxify requires jQuery!
@@ -25,17 +28,21 @@ Setup your collection or blog template, for example:
 ```
 {% paginate collection.products by 3 %}
   <div id="MainContent" class="container">
-    <div class="row EndlessScroll">
+    <div class="row">
 
-      {% for product in collection.products %}
-        {% include 'product-grid-item' %}
-      {% endfor %}
-
-      {% if paginate.next %}
-        <div class="more">
-          <a href="{{ paginate.next.url }}">Loading More</a>
-        </div>
-      {% endif %}
+      <div class="EndlessScroll">
+      
+        {% for product in collection.products %}
+          {% include 'product-grid-item' %}
+        {% endfor %}
+        
+        {% if paginate.next %}
+          <div class="pagination">
+            <a href="{{ paginate.next.url }}">Loading More</a>
+          </div>
+        {% endif %}
+        
+      </div>
 
     </div>
   </div>
