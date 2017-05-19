@@ -5,13 +5,16 @@ Ajax pagination plugin for Shopify themes.
  - Endless scrolling - scroll to the bottom of the page to load the next.
  - Endless click - Like endless scroll but click a link to load the next pages.
  - Ajaxination - Normal pagination style but load the page without reloading, uses push states.
- - Fallsback gracefully when there is no javascript available.
+ - Fallsback gracefully when JavaScript is not available.
 
 ## Demos
 
-Endless Scroll (default) https://ajaxify.myshopify.com/collections/all
+<a href="https://ajaxify.myshopify.com/collections/all" target="_blank">Endless Scroll</a>
 
-More coming soon
+<a href="https://ajaxify.myshopify.com/collections/all?view=endless-click" target="_blank">Endless Click</a>
+
+<a href="https://ajaxify.myshopify.com/collections/all?page=1&view=ajaxinate" target="_blank">Ajaxinate</a>
+
 
 ## Getting Started
 Ajaxify requires jQuery!
