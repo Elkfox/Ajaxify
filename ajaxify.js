@@ -1,4 +1,18 @@
-// Ajax Pagination
+/*==============================================================================
+ ___  _   _    _
+/   || | | |  | |
+\__  | | | |  | |  __
+/    |/  |/_) |/  /  \_/\/
+\___/|__/| \_/|__/\__/  /\_/
+              |\
+              |/
+Ajaxify v1.0
+https://github.com/Elkfox/Ajaxify
+Copyright (c) 2017 Elkfox Co Pty Ltd
+https://elkfox.com
+Project lead: George Butter
+MIT License
+==============================================================================*/
 
 ajaxify = function(settings) {
   settings = settings || {}
